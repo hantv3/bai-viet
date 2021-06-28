@@ -1,4 +1,4 @@
-##Hướng dẫn cài đặt LEMP Stack trên Ubuntu 20
+<h2>Hướng dẫn cài đặt LEMP Stack trên Ubuntu 20</h2>
 
 > LEMP là viết tắt của Linux, Nginx (Engine x), MySQL và PHP, và đây là một trong những biến thể của web server.
 
@@ -6,12 +6,12 @@
 
 > Trước khi làm các bạn có thể đọc trước về các sử dụng command phổ biến cho linux hoặc ubuntu, các sử dụng nano editor hoặc vim.
 
-#####Bước 1: Cập nhật và nâng cấp các gói có sẵn và đã cũ trong hệ thống bằng câu lệnh sau:
+<h5>Bước 1: Cập nhật và nâng cấp các gói có sẵn và đã cũ trong hệ thống bằng câu lệnh sau:</h5>
 > sudo apt-get update && sudo apt-get upgrade -y
 
 Câu lệnh trên giúp chúng ta cập nhật các gói(package) có sãn trong hệ thống nằm trong file có đường dẫn: `/etc/scources.list`, `-y` ở cuối câu dùng chấp nhận các package cần thiết khi update và nâng cấp được đề xuất.
 **Lưu ý**: Phải chạy câu lệnh update trước câu lệnh nâng cấp upgrade vì update được sử dụng để đồng bộ hoá lại các index file từ các nguồn từ `/etc/scources.list`.
-#####Bước 2: Cài đặt Nginx.
+<h5>Bước 2: Cài đặt Nginx.</5>
 - Nginx hiện tại là một máy chủ được sử dùng từ web nhỏ cho tới web siêu lớn vì hiệu năng mà nó mang lại.
 
 Sau cập nhật và năng cấp các gói trong hệ thống ta bắt đầu chạy câu lệnh cài đặt Nginx:
@@ -53,6 +53,7 @@ Sau đó chạy tiếp câu lệnh:
 > sudo systemctl enable nginx.service
 
 Cho phép Nginx khởi động cùng hệ thống.
+
 ![status nginx](https://lh3.googleusercontent.com/hJ1Or7gcxni4K6qy2qhhK333R2bW1Cu_ZE--ldG0_XwmJe_zbTMV4Kzr0X-3cduBCO_LW04yRkYeK9LG0Yx8fMw14ZBBbwzIFym0eUmWiSFupek5SHcfl-Z-x_q3zJ5IOXc1YrHZg4q0a08J3dpGttqXemL09iVCrG2vwGJs2scUlZMpJpzTqocnMT43usDWfQlsYr_GD2kQ3UTnQcgWiUpB2zOesoRZFV0rW5MWqd_T3RzDWOwMK_o6UYxnD0_UdpLWV2GyQKcrmiqmEzxQcbIWzYv9QWQCazvaBJ4dFOaMQGbd1y2BYeMxWghWXFIjBAgGCOI9mSVA_vcPaWHTgtmW5Fx228kyNJuQrfqDsfcGgvKJcaA6UTfnEg6l5ZZb7-7oZiBP7RMHQ4VVIKWePx3a0pzoLlvc_dQEeCj26XTQylJEA-6xPjx6a80kMXVIqzrY6CrgfuvCF5oxR9sy4-p8V7Wj7FamrKOMoJv5xDZ_RAtsQynwulCl5DcI_0_K0acnfzj-VwfSKNy0IdIkvE-JhZQbZP4l-MYql6iRg_ohUqpivVbsv2bkSEut3-1hxtkUd_cfH10GgLk5Iif8RHa6OGk6S-WRJZGv5MjzyXmeElTA3yiWs4-yo9zUiqupCUEUuSWcJ9KWe9wnftCAqN-Q4XibuLAUi8vYYi4ACAAaz0-30HUEP77NGBHzYn-m9_hsy8Ek3HHY4VzIdDF9pIGW=w3198-h166-no?authuser=1)
 
 Giờ bạn mở trình duyệt lên và gõ [http://locahost](http://locahost)
@@ -61,7 +62,7 @@ Giờ bạn mở trình duyệt lên và gõ [http://locahost](http://locahost)
 ![image-localhost](https://lh3.googleusercontent.com/AxMuINBLsVhtiI6w27GjaQxusaBi8mb7bxvakSMyhfnsihLD3Uc7TDWCCAj1jvNYjWEK6vVXwD2op3e5p0xhStVAB60ODYSLbO80_zs5gspS-ZlyiTSNpfqDmKABHtM8BhJB2vnN-4LXQOm63kJo9qle0zicYxXNraI0N2tMnzpkhsT0ozwslzO89k6kIQNWk33Ze8G9_DN1SBLKDVN8h_DYt05qNG8M-hfTBnORSMpTJwAdgn_SlVeEgVXYwEynhP2tUgBLBoj6RpJlCRab92gU1-_2_RZNDNCmEm4_OrfolnWP6mj5p8VH7L0RbImhwQboZTpmAEofaxy-V0ev_7CBfYYc7uzYB0BKHlzUDoBQLvJ6VZb9oQGVaiofJoD_geOtoCvXkrdEzt_oicptbSyPtgLScOzeKpxo4_02Fgx5HqnhkdV6iiiW4T7Suax2OOOIfBuPnluynckxh6GJUfchmvd9by_o8DGCq0MiFX7J-GcXNfd4RK4njxZNiZQhRouir1nAa7Up2wmQvCXFWfLicwXhR_VKaBGn95EwyEWOZul8SO0cIM-EwlT1MHoq13RRj7BobqTpsSd96pRw-aWawKHXxR6zTtxDVE5gWHcYH8F-fQH3PHSWLesnxEdNCZX3szTCZ090VwH8efzDYoqPU9t5xK89jfCONRYTocF8tndJk-_lR4fRy8k9EeIR8WVmmJb5-QRIh292JUfVXjmC=w2298-h1466-no?authuser=1)
 
 Như vậy là Nginx đã chạy thành công.
-#####Bước 3: Cài đặt MySQL.
+<h5>Bước 3: Cài đặt MySQL.</h5>
 
 Các bạn chạy câu lệnh sau:
 > sudo apt install mysql-server -y
@@ -122,7 +123,7 @@ Kiểu tra lại list user xem đã thêm mới user thành công hay chưa:
 
 Như vậy là thêm thành công, giờ bạn có thể kết nối với phpMyAdmin hoặc bằng Navicat.
 
-#####Bước 4: Remote Access MySQL.
+<h5>Bước 4: Remote Access MySQL.</h5>
 
 Nếu các bạn cài đặt cho server mysql thì sẽ cần phải kết nối từ bên ngoài vào để quản lý và thêm sửa xóa dữ liệu cho mysql. Nhưng hiện tại khi cài đặt xong chúng ta không thẻ kết nối đến được, vì mặt định mysql khi cài đặt xong trong file cấu hình `mysqld.cnf` sẽ cấu hình mysql kết nối cục bộ, các kết nối đến từ bên ngoài với `user_demo1 ` sẽ không thể kết nối đến được. Vì vậy sẽ cần phải truy cập đến file `mysqld.cnf` để chỉnh sửa cho mysql nhận kết nối từ bên ngoài.
 Chạy câu lệnh sau:
@@ -138,7 +139,7 @@ Tìm dòng `bind-address`, mặc định sẽ là `bind-addrss = 127.0.0.1` các
 
 **Lưu ý:** feild host: <input> nếu là ubuntu destop sẽ điều là localhost-127.0.0.1, nếu là server sẽ điền là IP host vd: 34.344.12.33.
 
-#####Bước 5: Cài đặt đặt PHP.
+<h5>Bước 5: Cài đặt đặt PHP.</h5>
 
 Trong bài viết này mình sẽ cài phiên bản 8.0 của PHP.
 
@@ -163,7 +164,7 @@ Kiểm tra trạng thái của php-fpm có hoạt động không.
 
 ![statusphp8.0-fpm](https://lh3.googleusercontent.com/zdk1Hp9mdyhzRyjyFyD8B4IAv_jD97kJ_9VkqBPrM_xSxGnc9Fx9TpvL27xTdLa_6ASg5XNTy9VJ4cKQZZ6zwfuHyqi2yZtVY9EzAVHydRUyl2rXbp_EeT_4QPCwazDTPHX7ftUbPZqFxx4iRyghQQw0IxNAPezlES9I6TcDLRY5oggw5EIYHpV2K7cApR9MnBuE41yx28LsdVCYNmMj72pQmoOhaS9dbN_H179KPudddM7_hvqNgVS_BQcmv2mMilxgMOMIrb_BrrAlcwoIVz6G1MyQN_TGlVcLxEG82kMmLkxEd-opcpSXnND1LSCY8lxrknO3zZR8CmywOc9d1YyA8w1H8hizVhVZtPxeQPwpvhL_1n8YmOqJ73W9Bk5loXErJDtV5LPN8UNW2qNlgCJ4b4ksvdIK69pDOXU5xvFtiYmjRel9I6kdHjEVDMrphLGtSNAEDukAl0ytvo5tFytUJe-d_fbsJ_jHbe8chmxZ6EKjgJbOkKOD-gh6-gZ9ymgyAdMr8CjO8q0DgcVQkhHeiQGkB6PYn042DwZIyCnA9IRdm7fneoMemGDJ_PGusID1i829NX4LPWVTZ07wn6qIpwBukIDGt6jDmAolokXI4v95Jo5jjGSkRQ2vHweKuCrGgMWgRdnINHFNlg3yayVU18wHUhGvkHZeXp1HiPS9-yBpnq0ps7V2XFZ_wZ1_Yo7n_4GOlSqRxVf5hdJuCy9H=w3190-h810-no?authuser=1)
 
-#####Bước 6: Cấu hình PHP-FPM.
+<h5>Bước 6: Cấu hình PHP-FPM.</h5>
 Muốn Nginx có thể đọc được file php các bạn cần cấu hình cho php-fpm có thể giao tiếp được với nginx. Và php-fpm có trách nhiệm dịch các dòng code php sang html để nginx đọc và hiển thị.
 
 Trong bài hướng dẫn này mình cấu hình PHP-FPM theo giao thức [TCP/IP socket](https://wiki.matbao.net/socket-la-gi-khai-niem-can-biet-ve-giao-thuc-tcp-ip-va-udp/)
@@ -192,7 +193,7 @@ Khởi động lại php-fpm để cấu hình có hiệu lực.
 
 Như trên hình là đã thành công.
 
-#####Bước 6: Tạo Nginx Server Block.
+<h5>Bước 6: Tạo Nginx Server Block.</h5>
 
 Đầu tiên các bạn cần back-up 1 file cấu hình gốc của Nginx để khi cần có cái để dùng.
 
